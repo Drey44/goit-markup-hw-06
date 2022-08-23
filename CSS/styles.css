@@ -229,8 +229,8 @@ button {
 .modal-btn {
   display: block;
   margin: 0px auto;
-  /*padding-left: 32px;
-  padding-right: 32px;*/
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 200px;
@@ -696,12 +696,6 @@ button {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: border-color, var(--transition-delay-and-duration);
-}
-
-.modal-close-btn:focus,
-.modal-close-btn:hover {
-  border-color: var(--acent-color);
 }
 
 .modal-close-btn-icon {
@@ -734,7 +728,27 @@ button {
   border-radius: 4px;
   padding-left: 42px;
   font-size: 16px;
+
+  transition: border-color var(--transition-delay-and-duration);
+}
+.modal-form-input:focus {
+  border-color: var(--acent-color);
   outline: none;
+}
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+}
+.modal-user-name-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  transition: fill var(--transition-delay-and-duration);
+}
+.modal-form-input:focus + .modal-user-name-icon {
+  fill: var(--acent-color);
 }
 .modal-form-input-description {
   display: block;
@@ -757,11 +771,17 @@ button {
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   resize: none;
+  transition: border-color var(--transition-delay-and-duration);
+}
+.comment-field-area::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.comment-field-area:focus {
+  border-color: var(--acent-color);
   outline: none;
 }
-
 .modal-form-check-discription {
   font-size: 14px;
   line-height: 1.71;
