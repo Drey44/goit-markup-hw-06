@@ -783,10 +783,31 @@ button {
   outline: none;
 }
 .modal-form-check-discription {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 30px;
   cursor: pointer;
+  color: var(--secondary-text-color);
+}
+.modal-form-check-discription::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.modal-form-check:checked + .modal-form-check-discription::before {
+  background-color: var(--acent-color);
+  border: 2px solid var(--acent-color);
+  background-image: url(/images/modal_form_user_policy_check.svg);
+}
+.modal-form-check:focus + .modal-form-check-discription::before {
+  outline: 1px solid var(--acent-color);
 }
 .user-policy-link {
   color: var(--acent-color);
