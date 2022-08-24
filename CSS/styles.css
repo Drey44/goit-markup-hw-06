@@ -650,7 +650,7 @@ button {
 }
 
 /*===========/Portfolio=================*/
-/*===============MODAL WINDOW==============*/
+/*===============MODAL FORM==============*/
 .backdrop {
   position: fixed;
   z-index: 100;
@@ -663,12 +663,12 @@ button {
     opacity var(--transition-delay-and-duration);
 }
 
-/*.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
-*/
+
 .modal {
   position: absolute;
   top: 50%;
@@ -813,4 +813,4 @@ button {
   color: var(--acent-color);
 }
 
-/*====================FORM========================*/
+/*=================MODAL FORM========================*/
