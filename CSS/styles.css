@@ -844,7 +844,7 @@ button {
 .modal-form-check:checked + .modal-form-check-discription::before {
   background-color: var(--acent-color);
   border: 2px solid var(--acent-color);
-  background-image: url(/images/modal_form_user_policy_check.svg);
+  background-image: url(../images/modal_form_user_policy_check.svg);
   outline: none;
 }
 
