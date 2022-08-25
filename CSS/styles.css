@@ -463,12 +463,13 @@ button {
 
 .footer-container {
   display: flex;
-  column-gap: 70px;
+
   align-items: baseline;
 }
 
 .footer-left {
   min-width: 231px;
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -502,6 +503,9 @@ button {
 .footer-link:focus {
   color: var(--acent-color);
 }
+.footer-right {
+  margin-right: 93px;
+}
 
 .footer-right-text {
   font-weight: 700;
@@ -518,6 +522,38 @@ button {
 
 .footer-social-list-icon {
   fill: var(--white-color);
+}
+.footer-form-wrapper {
+  display: flex;
+  align-items: baseline;
+  column-gap: 12px;
+}
+.footer-form-input {
+  font-size: 16px;
+  line-height: 1.25;
+  width: 358px;
+  height: 50px;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--white-color);
+  transition: border-color var(--transition-delay-and-duration);
+}
+.footer-form-input:focus {
+  border-color: var(--acent-color);
+  outline: none;
+}
+.footer-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 
 /*===========/Footer=================*/
@@ -668,7 +704,6 @@ button {
   visibility: hidden;
   pointer-events: none;
 }
-
 .modal {
   position: absolute;
   top: 50%;
@@ -727,8 +762,8 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  padding-right: 15px;
   font-size: 16px;
-
   transition: border-color var(--transition-delay-and-duration);
 }
 .modal-form-input:focus {
@@ -800,15 +835,19 @@ button {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
+  transition: background-color var(--transition-delay-and-duration),
+    border var(--transition-delay-and-duration);
+}
+.modal-form-check:focus + .modal-form-check-discription::before {
+  outline: 2px solid blue;
 }
 .modal-form-check:checked + .modal-form-check-discription::before {
   background-color: var(--acent-color);
   border: 2px solid var(--acent-color);
   background-image: url(/images/modal_form_user_policy_check.svg);
+  outline: none;
 }
-.modal-form-check:focus + .modal-form-check-discription::before {
-  outline: 1px solid var(--acent-color);
-}
+
 .user-policy-link {
   color: var(--acent-color);
 }

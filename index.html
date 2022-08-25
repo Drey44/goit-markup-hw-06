@@ -424,7 +424,6 @@
               <a class="social-list-link footer-social-list-link" href="">
                 <svg class="social-list-icon footer-social-list-icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram">
-
                   </use>
                 </svg>
               </a>
@@ -433,7 +432,6 @@
               <a class="social-list-link footer-social-list-link" href="">
                 <svg class="social-list-icon footer-social-list-icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter">
-
                   </use>
                 </svg>
               </a>
@@ -442,7 +440,6 @@
               <a class="social-list-link footer-social-list-link" href="">
                 <svg class="social-list-icon footer-social-list-icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook">
-
                   </use>
                 </svg>
               </a>
@@ -451,15 +448,27 @@
               <a class="social-list-link footer-social-list-link" href="">
                 <svg class="social-list-icon footer-social-list-icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin">
-
                   </use>
                 </svg>
               </a>
             </li>
           </ul>
-
-
         </div>
+        <div>
+          <form>
+            <p class="footer-right-text">Подпишитесь на рассылку</p>
+            <div class="footer-form-wrapper">
+              <input type="email" class="footer-form-input" required placeholder="E-mail">
+
+              <button class="footer-btn modal-btn" type="submit">
+                <span>Подписаться</span><svg class="footer-icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon_send"></use>
+                </svg></button>
+
+            </div>
+          </form>
+        </div>
+
       </div>
     </footer>
   </main>
@@ -472,9 +481,10 @@
           <use href="./images/icons.svg#close-modal"></use>
         </svg>
       </button>
-      <p class="modal-form-main-text">Оставьте свои данные, мы вам перезвоним</p>
+
 
       <form class="modal-form">
+        <p class="modal-form-main-text">Оставьте свои данные, мы вам перезвоним</p>
         <label class="modal-form-field">
           <span class="modal-form-input-description">Имя</span>
           <span class="modal-form-input-wrapper"><input type="text" name="user_name" class="modal-form-input" required
@@ -507,9 +517,9 @@
         <input type="checkbox" id="user-policy" name="user-policy" class="modal-form-check visually-hidden">
         <label for="user-policy" class="modal-form-check-discription">Соглашаюсь с рассылкой и принимаю&nbsp;
           <a class="user-policy-link" href="">Условия договора</a> </label>
-        <div class="modal-form-btn-wrapper">
-          <button type="submit" class="modal-form-submit modal-btn">Отправить</button>
-        </div>
+
+        <button type="submit" class="modal-form-submit modal-btn">Отправить</button>
+
 
       </form>
     </div>
